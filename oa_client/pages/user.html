@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <h1>个人中心</h1>
+    <form class="user">
+        <!-- 在此处渲染用户信息 -->
+    </form>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/art-template/lib/template-web.js"></script>
+    <script src="../js/user.js"></script>
+    <script type="text/html" id="user_info">
+        <label>
+            用户名：<input class="username" type="text" name="username" value="{{ list.username }}" readonly>
+        </label>
+        <label>
+            昵称：<input class="nickname" type="text" name="nickname" value="{{ list.nickname }}" >
+        </label>
+        <label>
+            年龄：<input class="age" type="number" name="age" value="{{ list.age }}" >
+        </label>
+        <label>
+            性别：<input class="gender" type="text" name="gender" value="{{ list.gender }}" readonly>
+        </label>
+        <label>
+            密码：<input class="password" type="text" name="password" value="{{ list.password }}" >
+        </label>
+        <label>
+            简介：<textarea name="desc" id="desc" cols="30" rows="10"  value="{{ list.desc }}"></textarea>
+            <!-- <input class="desc" type="textarea" name="desc" width="200" height="200" value="{{ list.desc }}" > -->
+        </label>
+        <label>
+            <button class="update">修改</button>
+            <button class="cancel">取消</button>
+        </label>
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+form{
+    background-color: skyblue;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    /* margin: 20px;
+    border: 2px solid #333; */
+
+}
+
+form  > label{
+    margin: 10px;
+}
+form > .show{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: auto;
+}
+form > .show div{
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    
+}
+form > .show > input{
+    /* 隐藏文件选择器 */
+    display: none;
+}
+
+form > .show > .username{
+    margin-top: 20px;
+}
+form > div{
+    width: 300px;
+    /* height: 70px; */
+    display: flex;
+   
+}
+form button{
+    width: 50px;
+   
+    margin: 10px 50px ;
+    color: red;
+    
+}
